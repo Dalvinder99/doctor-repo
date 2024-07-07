@@ -1,0 +1,78 @@
+.section-box {
+
+  .colum-division {
+
+
+    .box1 {
+      display: flex;
+      border-radius: 10px;
+
+      .outer-profile-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+
+        .photo-border {
+          border: 6px solid transparent;
+          border-radius: 50%;
+          background: linear-gradient(125.23deg, #00ACBA 42.07%, #F3893D 81.9%);
+          width: 72%;
+          padding-top:67%;
+          position: relative;
+
+          .profile-info {
+            background-image: url('/assets/images/pic.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+          }
+
+        }
+      }
+
+
+      .doctor-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+
+        h1 {
+          font-family: "Titillium Web", sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          line-height: 35.39px;
+        }
+
+        h2 {
+          font-family: "Titillium Web", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 27.38px;
+          color: rgba(122, 126, 129, 1);
+        }
+
+        p {
+          font-family: "Titillium Web", sans-serif;
+          font-size: 12.5px;
+          font-weight: 400;
+          line-height: 22.05px;
+          color: rgba(122, 126, 129, 1);
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,50 @@
+
+.box4 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    border-radius: 10px;
+    .priscription {
+
+        h2 {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 42.59px;
+            text-align: center;
+            color: rgba(38, 50, 56, 0.8);
+        }
+
+        p {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30.42px;
+            text-align: center;
+            color: rgba(38, 50, 56, 0.5);
+
+        }
+
+    }
+
+    .btn {
+          display: flex;
+          justify-content: center;
+          gap: 2%;
+          border: none;
+        button {
+            width: 250px;
+            height: 50px;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 28.9px;
+            text-align: center;
+            color: rgba(0, 172, 186, 1);
+            background: rgba(255, 255, 255, 1);
+            border: 1px solid rgba(0, 172, 186, 1);
+            border-radius:10px;
+            
+        }
+    }
+}

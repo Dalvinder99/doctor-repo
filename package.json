@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+
+  "scripts":{ 
+
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "compile-files":"sass --watch ./assets/style/sass/main.scss ./styles/style.css"
+  }
+  }
+  
+

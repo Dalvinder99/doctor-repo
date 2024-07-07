@@ -1,0 +1,214 @@
+.navbar-row {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+
+   
+
+    .bar-btn{
+            display: flex;
+            gap: 20%;
+
+            @media only screen and (min-width:360px) and (max-width:576px){
+                gap:10%;
+
+            }
+
+        .fa-bars{
+            color: rgba(255, 255, 255, 1);
+            font-size: 30px;
+            cursor: pointer;
+        }
+        img{
+             width: 80%;
+             height: auto;
+
+             @media only screen and (min-width: 576px) and (max-width: 768px){
+                width: 60%;
+                height: auto;
+             }
+
+             @media only screen and (min-width:360px) and (max-width:576px){
+                width: 60%;
+                
+             }
+        }
+
+      @media only screen and (min-width:1150px){
+        display: none;
+      }
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+           
+        @media only screen and (max-width:1149px){
+            display: none;
+        }
+        img {
+            width: 100%;
+
+            @media only screen and (min-width: 1150px) and (max-width: 1296px){
+                width: 80%;
+                height: auto;
+            }
+
+        }
+    }
+
+    .list {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (min-width: 360px) and (max-width: 1149px) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            list-style-type: none;
+
+            @media only screen and (min-width: 1150px) and (max-width: 1296px) {
+                gap: 15px;
+            }
+
+            li {
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    font-family: "Titillium Web", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27.38px;
+                    color: rgba(255, 255, 255, 1);
+                    user-select: none;
+                    position: relative;
+
+                    @media only screen and (min-width: 1150px) and (max-width: 1296px) {
+                        font-size: 15px;
+
+                    }
+
+                    span {
+                        font-weight: 700;
+                    }
+
+                    &::before {
+                        content: "";
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background: rgba(0, 172, 186, 1);
+                        position: absolute;
+                        left: calc(50% - 3.5px);
+                        top: -7px;
+                        display: none;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 90%;
+                        height: 2px;
+                        background: rgba(0, 172, 186, 1);
+                        position: absolute;
+                        right: 0;
+                        bottom: -17%;
+                        left: 5%;
+                        display: none;
+                    }
+
+                    &:hover {
+
+                        color: rgba(0, 172, 186, 1);
+
+                        &::before {
+                            display: block;
+                        }
+
+                        &::after {
+                            display: block;
+                        }
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .doctor-name {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        @media only screen and (min-width: 360px) and (max-width: 576px){
+            gap:20px;
+        }
+
+        p {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27.38px;
+            color: rgba(255, 255, 255, 1);
+
+            @media only screen and (min-width: 1150px) and (max-width: 1296px) {
+                font-size: 15px;
+
+            }
+
+            @media only screen and (min-width: 576px) and (max-width: 768px){
+                font-size: 13px;
+            }
+
+            @media only screen and (min-width: 360px) and (max-width: 576px){
+                font-size: 13px;
+            }
+                   
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        .profile-border {
+            border: 3px solid rgba(0, 172, 186, 1);
+            border-style: dotted;
+            border-radius: 50%;
+
+            .profile {
+                background-image: url('/assets/images/Ellipse\ 1.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 54px;
+                width: 54px;
+
+                @media only screen and (min-width: 1150px) and (max-width: 1296px) {
+                    height: 40px;
+                    width: 40px;
+
+                }
+
+                @media only screen and (min-width: 576px) and (max-width: 768px){
+                    height: 35px;
+                    width: 35px;
+                }
+
+                @media only screen and (min-width: 360px) and (max-width: 576px){
+                    height: 35px;
+                    width: 35px;
+                }
+            }
+        }
+
+    }
+
+
+
+}
