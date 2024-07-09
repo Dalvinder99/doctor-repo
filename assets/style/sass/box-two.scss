@@ -3,7 +3,14 @@
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+    white-space: nowrap;
+    @media only screen and (min-width: 992px) and (max-width: 1700px){
+        padding: 10px 0px;
+    }
 
+    @media only screen and (min-width:360px) and (max-width:991px){
+        padding: 10px 0px;
+    }
     .product-info {
        
         h2 {
@@ -18,9 +25,18 @@
     }
 
     .product-bottle {
-        display: flex;
+         display: flex;
         justify-content: center;
         gap: 5%;
+
+        @media only screen and (min-width:992px) and (max-width:1700px){
+            gap: 1%;
+        }
+
+        @media only screen and (min-width:360px) and (max-width:576px){
+             display: flex;
+            flex-wrap: wrap;
+        }
 
         .border-bottle {
             border: 1px solid #eee;
@@ -34,6 +50,13 @@
             font-weight: 400;
             line-height: 27.38px;
             color: rgba(122, 126, 129, 1);
+
+            
+        @media only screen and (min-width:992px) and (max-width:1700px){
+            font-size: 14px;
+            text-align: center;
+        }
+
         }
     }
 

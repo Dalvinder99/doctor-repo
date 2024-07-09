@@ -3,28 +3,38 @@
     padding: 30px;
     border-radius: 10px;
     margin: 0 8%;
+    
+    
 
-    @media only screen and (min-width:576px) and (max-width:768px){
-          margin-top: 1%;
+    @media only screen and (min-width:360px) and (max-width:768px){
+          margin: 0;
     }
 
-    .colum-division {
+    .column-division {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
         gap: 15px;
-        height: 500px;
+        
+         @media only screen and (min-width:576px) and (max-width:991px) {
+            grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+         }
+
+         @media only screen and (min-width:360px) and (max-width:576px) {
+            grid-template-columns: repeat(auto-fit, minmax(30px, auto));
+         }
 
         .box1 {
             background: rgba(255, 255, 255, 1);
             grid-column: 1 / span 2;
             grid-row: 1 / span 2;
          
-             @media only screen and (min-width: 576px) and (max-width: 1700px) {
+             @media only screen and (min-width: 992px) and (max-width: 1700px) {
                 grid-column: 1 / span 3;
                 grid-row: 1 / span 1;
              }
 
-             @media only screen and (min-width: 360px) and (max-width: 576px) {
+             @media only screen and (min-width: 360px) and (max-width:991px) {
                 grid-column: 1 / span 6;
                 grid-row: 1 / span 1;
              }
@@ -36,12 +46,12 @@
             grid-column: 3 / span 3;
             grid-row: 1 / span 2;
 
-            @media only screen and (min-width: 576px) and (max-width: 1700px) {
+            @media only screen and (min-width: 992px) and (max-width: 1700px) {
                 grid-column: 4 / span 3;
                 grid-row: 1 / span 1;
              }
 
-             @media only screen and (min-width: 360px) and (max-width: 1700px) {
+             @media only screen and (min-width: 360px) and (max-width:991px) {
                 grid-column: 1 / span 6;
                 grid-row: 2 / span 1;
                
@@ -53,12 +63,12 @@
             background: rgba(255, 255, 255, 1);
             grid-row: 1 / span 1; 
 
-            @media only screen and (min-width: 576px) and (max-width: 1700px) {
+            @media only screen and (min-width: 992px) and (max-width: 1700px) {
                    grid-column:  1 / span 2;
                    grid-row:  2 / span 1;
              }
 
-             @media only screen and (min-width: 360px) and (max-width: 1700px) {
+             @media only screen and (min-width: 360px) and (max-width:991px) {
                 grid-column: 1 / span 6;
                 grid-row: 3 / span 1;
              }
@@ -70,12 +80,12 @@
             grid-column: 1 / span 5;
             grid-row: 3 / span 2;
 
-            @media only screen and (min-width: 576px) and (max-width: 1700px) {
+            @media only screen and (min-width: 992px) and (max-width: 1700px) {
                 grid-column: 1 / span 6;    
                 grid-row: 3 / span 1;  
           }
 
-          @media only screen and (min-width: 360px) and (max-width: 576px) {
+          @media only screen and (min-width: 360px) and (max-width:991px) {
             grid-column: 1 / span 6;
             grid-row: 4 / span 1;
          }
@@ -87,12 +97,12 @@
             background: rgba(255, 255, 255, 1);
             grid-row: 2 / span 3;
            
-            @media only screen and (min-width: 576px) and (max-width: 1700px) {
+            @media only screen and (min-width: 992px) and (max-width: 1700px) {
                 grid-column: 3 / span 4;
                 grid-row:  2 / span 1;
           }
 
-          @media only screen and (min-width: 360px) and (max-width: 576px) {
+          @media only screen and (min-width: 360px) and (max-width: 991px) {
             grid-column: 1 / span 6;
             grid-row: 5 / span 1;
            

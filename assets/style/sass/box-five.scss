@@ -1,0 +1,312 @@
+.box5 {
+
+    
+    // this content visible only when the screen size in above(1700px) and less then(992px);
+    .bottle-info {
+        padding: 20px 30px;
+
+        @media only screen and (min-width:992px) and (max-width:1700px){
+            display: none;
+        }
+          
+      
+        h1 {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 38.03px;
+            text-align: center;
+            background: rgba(0, 172, 186, 1);
+            color: rgba(255, 255, 255, 1);
+            border-radius: 0px 10px 0px 10px;
+        }
+
+        h2 {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 33.46px;
+            color: rgba(81, 91, 96, 1);
+            text-align: center;
+        }
+
+        .bottle-describe {
+            display: flex;
+            justify-content: center;
+
+
+
+            .fa-chevron-left {
+                color: rgba(243, 137, 61, 1);
+                display: flex;
+                align-items: center;
+
+            }
+
+            .bottle-text {
+                h3 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.86px;
+                    color: rgba(38, 50, 56, 0.7);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18.62px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+
+                p {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 15.21px;
+                    color: rgba(81, 91, 96, 1);
+                    margin-bottom: 6px;
+
+                    span {
+                        color: rgba(0, 172, 186, 1);
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+
+                h4 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18.07px;
+                    color: rgba(0, 172, 186, 1);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 13px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 16.78px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+            }
+
+            .fa-chevron-right {
+                color: rgba(243, 137, 61, 1);
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .order-btn {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+
+            button {
+                font-family: "Titillium Web", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27.38px;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                background: rgba(243, 137, 61, 1);
+                width: 100px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}     
+// this content visible only when the screen size in above(1700px) and less then(992px);
+
+
+
+.box5 {
+
+    
+    // this content visible only when the screen size less then(1700px) and above (992px);
+    .bottle-info-two {
+        padding: 20px 30px;
+        
+
+        @media only screen and (min-width:1700px){
+            display: none;
+        }
+
+          
+        @media only screen and (min-width: 360px) and (max-width:991px){
+            display: none;
+        }
+        h1 {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 38.03px;
+            text-align: center;
+            background: rgba(0, 172, 186, 1);
+            color: rgba(255, 255, 255, 1);
+            border-radius: 0px 10px 0px 10px;
+        }
+
+        h2 {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 33.46px;
+            color: rgba(81, 91, 96, 1);
+            text-align: center;
+        }
+
+        .bottle-describe-two {
+            display: flex;
+            justify-content: center;
+
+
+
+            .fa-chevron-left {
+                color: rgba(243, 137, 61, 1);
+                display: flex;
+                align-items: center;
+
+            }
+
+            .bottle-text-two {
+                h3 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.86px;
+                    color: rgba(38, 50, 56, 0.7);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18.62px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+
+                p {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 15.21px;
+                    color: rgba(81, 91, 96, 1);
+                    margin-bottom: 6px;
+
+                    span {
+                        color: rgba(0, 172, 186, 1);
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+
+                h4 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18.07px;
+                    color: rgba(0, 172, 186, 1);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 13px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 16.78px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+            }
+
+        }
+
+        .bottle-describe-three {
+            display: flex;
+            justify-content: center;
+
+            .bottle-text-three {
+                h3 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 19.86px;
+                    color: rgba(38, 50, 56, 0.7);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 15px;
+                        font-weight: 600;
+                        line-height: 18.62px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+
+                p {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 10px;
+                    font-weight: 400;
+                    line-height: 15.21px;
+                    color: rgba(81, 91, 96, 1);
+                    margin-bottom: 6px;
+
+                    span {
+                        color: rgba(0, 172, 186, 1);
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+                }
+
+                h4 {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 18.07px;
+                    color: rgba(0, 172, 186, 1);
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-size: 13px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: 16.78px;
+                        color: rgba(38, 50, 56, 1);
+                    }
+                }
+            }
+
+            .fa-chevron-right {
+                color: rgba(243, 137, 61, 1);
+                display: flex;
+                align-items: center;
+            }
+        }
+
+
+        .order-btn-two {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+
+            button {
+                font-family: "Titillium Web", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 27.38px;
+                text-align: center;
+                color: rgba(255, 255, 255, 1);
+                background: rgba(243, 137, 61, 1);
+                width: 100px;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}     
+// this content visible only when the screen size less then(1700px) and above (992px);
