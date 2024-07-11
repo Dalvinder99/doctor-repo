@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>website figma</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,38 +16,134 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="background">
-    <input type="checkbox" id="toggleSideMenu">
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="popup-box">
+                        <div class="cancel-mark">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <form>
+                            <h1 class="mb-3">Add Medication</h1>
+                            <div class="px-5">
+                                <div class="mb-4 row">
+                                    <div class=" col-md-12 col-sm-12 col-12">
+                                    <div class="input-box color-border">
+                                        <div class="caption-text">
+                                            <p>Medication*</p>
+                                        </div>
+                                        <input type="text" placeholder="Pred-|">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    </div>
+                                </div>
 
-    <div class="menu-bar">
-        <div class="menu-list">
-            <div class="bar-logo">
-                <img src="assets/images/Group 392.png" alt="logo">
-                <label for="toggleSideMenu"><i class="fa-solid fa-xmark"></i></label>
+                                <div class="row mb-4">
+                                    <div class=" col-lg-6 col-md-12 col-sm-12 col-12 mb-md-4 mb-sm-4 mb-4">
+                                        <div class="input-box">
+                                            <div class="caption-text">
+                                                <p>Quantity<span>*</span></p>
+                                            </div>
+                                            <input type="text" placeholder="">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                        <div class="input-box">
+                                            <div class="caption-text">
+                                                <p>Day Supply (Edit As Needed)<span>*</span></p>
+                                            </div>
+                                            <input type="text" placeholder="">
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="mb-4 row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 mb-md-4 mb-sm-4 mb-4">
+                                    <div class="input-box">
+                                        <div class="caption-text">
+                                            <p>Refills<span>*</span></p>
+                                        </div>
+                                        <input type="text" placeholder="">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                     </div>
+                                   <div class="col-lg-6 col-md-12 col-sm-12 col-12">  
+                                    <div class="input-box">
+                                        <div class="caption-text">
+                                            <p>Choose Dosing Instructions<span>*</span></p>
+                                        </div>
+                                        <input type="text" placeholder="">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mb-4 row">
+                                    <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="input-box">
+                                        <div class="caption-text">
+                                            <p>Choose Medical Necessity<span>*</span></p>
+                                        </div>
+                                        <input type="text" placeholder="">
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 row">
+                                    <div class="col-md-12 col-sm-12 col-12">
+                                    <div class="input-box comment">
+                                        <div class="caption-text">
+                                            <p>Comments</p>
+                                        </div>
+                                        <textarea></textarea>
+                                    </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="footer-box row">
+                                    <div class="footer-text">
+                                        <p><span>*</span>This field is mandatory</p>
+                                    </div>
+
+                                    <div class="footer-btn">
+                                        <div class="cancel-btn">
+                                            <button>Cancel</button>
+                                        </div>
+                                        <div class="add-btn">
+                                            <button>Add Medication</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
             </div>
-
-            <ul>
-                <li><a href="#" class="active">DASHBOARD</a></li>
-                <li><a href="#">PATIENTS</a></li>
-                <li><a href="#">PRESCRIPTION</a></li>
-                <li><a href="#">SETTINGS</a></li>
-                <li><a href="#">PRODUCT CATALOG</a></li>
-            </ul>
         </div>
-    </div><!--menu-bar-end-->
+    </div>
 
-    <navbar>
-        <div class="navbar-row">
-            <div class="bar-btn">
-                <label for="toggleSideMenu"> <i class="fa-solid fa-bars"></i></label>
-              <div class="img-bar"><img src="assets/images/Group 392.png" alt="logo"></div>
+    <div class="background">
+        <input type="checkbox" id="toggleSideMenu">
+
+        <div class="menu-bar">
+            <div class="menu-list">
+                <div class="bar-logo">
+                    <img src="assets/images/Group 392.png" alt="logo">
+                    <label for="toggleSideMenu"><i class="fa-solid fa-xmark"></i></label>
                 </div>
 
-            <div class="logo">
-               <img src="assets/images/Group 392.png" alt="logo">
-            </div>
-
-            <div class="list">
                 <ul>
                     <li><a href="#" class="active">DASHBOARD</a></li>
                     <li><a href="#">PATIENTS</a></li>
@@ -56,323 +152,385 @@
                     <li><a href="#">PRODUCT CATALOG</a></li>
                 </ul>
             </div>
+        </div>
+        <!--menu-bar-end-->
 
-            <div class="doctor-name">
-                <p>Welcome, <span>Dr.Woodman</span></p>
-                <div class="profile-border">
-                    <div class="profile"> </div>
+        <navbar>
+            <div class="navbar-row">
+                <div class="bar-btn">
+                    <label for="toggleSideMenu"> <i class="fa-solid fa-bars"></i></label>
+                    <div class="img-bar">
+                        <img src="assets/images/Group 392.png" alt="logo">
+                    </div>
                 </div>
+
+                <div class="logo">
+                    <img src="assets/images/Group 392.png" alt="logo">
+                </div>
+
+                <div class="list">
+                    <ul>
+                        <li><a href="#" class="active">DASHBOARD</a></li>
+                        <li><a href="#">PATIENTS</a></li>
+                        <li><a href="#">PRESCRIPTION</a></li>
+                        <li><a href="#">SETTINGS</a></li>
+                        <li><a href="#">PRODUCT CATALOG</a></li>
+                    </ul>
+                </div>
+
+                <div class="doctor-name">
+                    <p>Welcome, <span>Dr.Woodman</span></p>
+                    <div class="profile-border">
+                        <a href="/login.html">
+                            <div class="profile"></div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!--navbar-row-end-->
+
+
+        </navbar>
+
+        <div class="section-box">
+
+            <div class="column-division">
+                <div class="box1">
+                    <div class="outer-profile-box">
+                        <div class="photo-border">
+                            <div class="profile-info"></div>
+                        </div>
+                    </div>
+
+                    <div class="doctor-info">
+                        <h1>Welcome,<br> Dr. Woodman</h1>
+                        <h2>Here's what's happening<br>in your account!</h2>
+                        <p><span>DR.</span> Alonso Woodman <span style="color:rgba(0, 172, 186, 1);">|</span>
+                            <span>NPI:</span> 264587
+                        </p>
+                    </div>
+                </div>
+                <!--box1-end-->
+
+                <div class="box2">
+                    <div class="product-info">
+                        <h2>Products Spotlight</h2>
+                    </div>
+
+                    <div class="product-bottle">
+
+                        <div class="product-bottle-one">
+                            <div class="border-bottle">
+                                <img src="assets/images/Ellipse 46.png">
+                            </div>
+                            <p><u>Pred-Moxi&reg</u></p>
+
+                        </div>
+
+                        <div class="product-bottle-two">
+                            <div class="border-bottle">
+                                <img src="assets/images/Ellipse 47.png">
+                            </div>
+                            <p><u>Tri-Moxi+ &#8482</u></p>
+                        </div>
+
+                        <div class="product-bottle-three">
+                            <div class="border-bottle">
+                                <img src="assets/images/Ellipse 48.png">
+                            </div>
+                            <p><u>Pred-Moxi&reg</u></p>
+                        </div>
+
+                        <div class="product-bottle-four">
+                            <div class="border-bottle">
+                                <img src="assets/images/Ellipse 49.png">
+                            </div>
+                            <p><u>Tri-Moxi+ &#8482</u></p>
+                        </div>
+
+                    </div>
+
+                    <div class="full-catalog"><u>Click Here To View Full Catolog</u></div>
+
+                </div>
+                <!--box2-end-->
+
+                <div class="box3">
+                    <div class="statistics">
+                        <h2>Statistics</h2>
+                        <div class="count">
+
+                            <div class="count-one">
+                                <p>08 </p>
+                                <span>Patients</span>
+                            </div>
+
+                            <div class="count-two">
+                                <p> 12 </p>
+                                <span>Prescriptions</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--box3-end-->
+
+                <div class="box4">
+                    <div class="priscription">
+                        <h2>Start a priscription</h2>
+                        <p>Prescribe now by:</p>
+                    </div>
+
+                    <div class="btn">
+                        <button>Choosing a Medication</button>
+                        <button>Choosing Existing Patient</button>
+                        <button>Adding New Patient</button>
+                    </div>
+
+                </div>
+                <!--box4-end-->
+                <div class="box5">
+
+                    <div class="bottle-info">
+                        <!-- this content visible only when the screen size in above(1700px) and less then(992px);-->
+                        <h1>503B Exclusive</h1>
+                        <h2>Cyclosporine 0.1%</h2>
+
+                        <div class="bottle-describe">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <div class="bottle-img">
+                                <img src="assets/images/drops.png">
+
+                            </div>
+                            <div class="bottle-text">
+                                <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles</h3>
+
+                                <p><span>-</span> No Prior Aothurization<br><span>-</span> No Coupons<br><span>-</span>
+                                    No
+                                    Pharmacy Call Backs</p>
+                                <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
+                            </div>
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                        <!--bottle-describe-end-->
+
+                        <div class="order-btn">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                        </div>
+                    </div>
+                    <!--bottle-info-end-->
+                    <!-- this content visible only when the screen size in above(1700px) and less then(992px);-->
+
+                    <div class="bottle-info-two">
+                        <!--this content visible only when the screen size less then (1700px) and above (992px);-->
+                        <h1>503B Exclusive</h1>
+                        <h2>Cyclosporine 0.1%</h2>
+
+                        <div style="display: flex; justify-content: center; justify-content: space-around;">
+                            <div class="bottle-describe-two">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                <div class="bottle-img">
+                                    <img src="assets/images/drops.png">
+
+                                </div>
+                                <div class="bottle-text-two">
+                                    <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles
+                                    </h3>
+
+                                    <p><span>-</span> No Prior Aothurization<br><span>-</span> No
+                                        Coupons<br><span>-</span> No
+                                        Pharmacy Call Backs</p>
+                                    <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
+                                </div>
+
+                            </div>
+                            <!--bottle-describe-end-two-->
+
+                            <div class="bottle-describe-three">
+
+                                <div class="bottle-img">
+                                    <img src="assets/images/drops.png">
+
+                                </div>
+                                <div class="bottle-text-three">
+                                    <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles
+                                    </h3>
+
+                                    <p><span>-</span> No Prior Aothurization<br><span>-</span> No
+                                        Coupons<br><span>-</span> No
+                                        Pharmacy Call Backs</p>
+                                    <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <!--bottle-describe-end-three-->
+
+                        </div>
+                        <!--bottle-division-end-->
+                        <div class="order-btn-two">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</button>
+                        </div>
+                    </div>
+                    <!--bottle-info-end-->
+                    <!--this content visible only when the screen size less then(1700px) and above (992px);-->
+
+                </div>
+                <!--box5-end-->
+
+                <div class="box6">
+                    <div class="recent-prescription">
+                        <h1>Most Recent Prescriptions</h1>
+                        <p><u>View All</u></p>
+                        <div class="table-responsive">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px; justify-content:center;white-space: nowrap;">
+                                            <div> RX Number</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Order ID</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Patient</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Prescriber</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Status</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <th>Tracking</th>
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Medication</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <th>
+                                        <div
+                                            style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
+                                            <div>Issue Date</div>
+                                            <div style="display: flex; flex-direction:column; margin-top: 3px;">
+                                                <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-up"></i></div>
+                                                <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
+                                                        class="fa-solid fa-sort-down"></i></div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+
+                                <tr>
+                                    <td><u>RX-65964845</u></td>
+                                    <td><u>ORD-87209514</u></td>
+                                    <td><span>TW</span> Theresa Woodman</td>
+                                    <td>Jennifer Acosta</td>
+                                    <td>Pharmacy</td>
+                                    <td><u>Track Now</u></td>
+                                    <td>Brim-Dor&#174</td>
+                                    <td>11/10/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td><u>RX-75859648</u></td>
+                                    <td><u>ORD-95487425</u></td>
+                                    <td><span>TW</span> Theresa Woodman</td>
+                                    <td>Walter Smith</td>
+                                    <td>Shipped</td>
+                                    <td><u>Track Now</u></td>
+                                    <td>Dex-Moxi-Ketor&#174</td>
+                                    <td>11/10/2021</td>
+                                </tr>
+
+                                <tr>
+                                    <td><u>RX-65964845</u></td>
+                                    <td><u>ORD-87209514</u></td>
+                                    <td><span>TW</span> Theresa Woodman</td>
+                                    <td>Jennifer Acosta</td>
+                                    <td>Pharmacy</td>
+                                    <td><u>Track Now</u></td>
+                                    <td>Brim-Dor&#174</td>
+                                    <td>11/10/2021</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--box-six-end-->
 
             </div>
-        </div> <!--navbar-row-end-->
+            <!--column-division-end-->
 
+        </div>
+        <!--section-box-end-->
 
-    </navbar>
+    </div>
+    <!--background-end-->
 
-    <div class="section-box">
-
-        <div class="column-division">
-            <div class="box1">
-                <div class="outer-profile-box">
-                    <div class="photo-border">
-                        <div class="profile-info"></div>
-                    </div>
-                </div>
-
-                <div class="doctor-info">
-                    <h1>Welcome,<br> Dr. Woodman</h1>
-                    <h2>Here's what's happening<br>in your account!</h2>
-                    <p><span>DR.</span> Alonso Woodman <span style="color:rgba(0, 172, 186, 1);">|</span>
-                        <span>NPI:</span> 264587
-                    </p>
-                </div>
-            </div><!--box1-end-->
-
-            <div class="box2">
-                <div class="product-info">
-                    <h2>Products Spotlight</h2>
-                </div>
-
-                <div class="product-bottle">
-
-                    <div class="product-bottle-one">
-                        <div class="border-bottle">
-                            <img src="assets/images/Ellipse 46.png">
-                        </div>
-                        <p><u>Pred-Moxi&reg</u></p>
-
-                    </div>
-
-                    <div class="product-bottle-two">
-                        <div class="border-bottle">
-                            <img src="assets/images/Ellipse 47.png">
-                        </div>
-                        <p><u>Tri-Moxi+ &#8482</u></p>
-                    </div>
-
-                    <div class="product-bottle-three">
-                        <div class="border-bottle">
-                            <img src="assets/images/Ellipse 48.png">
-                        </div>
-                        <p><u>Pred-Moxi&reg</u></p>
-                    </div>
-
-                    <div class="product-bottle-four">
-                        <div class="border-bottle">
-                            <img src="assets/images/Ellipse 49.png">
-                        </div>
-                        <p><u>Tri-Moxi+ &#8482</u></p>
-                    </div>
-
-                </div>
-
-                <div class="full-catalog"><u>Click Here To View Full Catolog</u></div>
-
-            </div><!--box2-end-->
-
-            <div class="box3">
-                <div class="statistics">
-                    <h2>Statistics</h2>
-                    <div class="count">
-
-                        <div class="count-one">
-                            <p>08 </p>
-                            <span>Patients</span>
-                        </div>
-
-                        <div class="count-two">
-                            <p> 12 </p>
-                            <span>Prescriptions</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div><!--box3-end-->
-
-            <div class="box4">
-                <div class="priscription">
-                    <h2>Start a priscription</h2>
-                    <p>Prescribe now by:</p>
-                </div>
-
-                <div class="btn">
-                    <button>Choosing a Medication</button>
-                    <button>Choosing Existing Patient</button>
-                    <button>Adding New Patient</button>
-                </div>
-
-            </div><!--box4-end-->
-            <div class="box5">
-
-                <div class="bottle-info"><!-- this content visible only when the screen size in above(1700px) and less then(992px);-->
-                    <h1>503B Exclusive</h1>
-                    <h2>Cyclosporine 0.1%</h2>
-
-                    <div class="bottle-describe">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <div class="bottle-img">
-                            <img src="assets/images/drops.png">
-
-                        </div>
-                        <div class="bottle-text">
-                            <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles</h3>
-
-                            <p><span>-</span> No Prior Aothurization<br><span>-</span> No Coupons<br><span>-</span> No
-                                Pharmacy Call Backs</p>
-                            <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
-                        </div>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div><!--bottle-describe-end-->
-
-                    <div class="order-btn">
-                        <button>Order Now</button>
-                    </div>
-                </div><!--bottle-info-end--><!-- this content visible only when the screen size in above(1700px) and less then(992px);-->
-           
-                <div class="bottle-info-two"><!--this content visible only when the screen size less then (1700px) and above (992px);-->
-                    <h1>503B Exclusive</h1>
-                    <h2>Cyclosporine 0.1%</h2>
-                 
-                    <div style="display: flex; justify-content: center; justify-content: space-around;">
-                    <div class="bottle-describe-two">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <div class="bottle-img">
-                            <img src="assets/images/drops.png">
-
-                        </div>
-                        <div class="bottle-text-two">
-                            <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles</h3>
-
-                            <p><span>-</span> No Prior Aothurization<br><span>-</span> No Coupons<br><span>-</span> No
-                                Pharmacy Call Backs</p>
-                            <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
-                        </div>
-                       
-                    </div><!--bottle-describe-end-two-->
-
-                    <div class="bottle-describe-three">
-                      
-                        <div class="bottle-img">
-                            <img src="assets/images/drops.png">
-
-                        </div>
-                        <div class="bottle-text-three">
-                            <h3>Ophthalmic<br> Emulsion<br> <span>(Preservative-Free)</span> <br>5.5mL bottles</h3>
-
-                            <p><span>-</span> No Prior Aothurization<br><span>-</span> No Coupons<br><span>-</span> No
-                                Pharmacy Call Backs</p>
-                            <h4>$440 Per Box of 10<br><span>($44 Per Bottle)</span></h4>
-                        </div>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div><!--bottle-describe-end-three-->
-                  
-                </div><!--bottle-division-end-->
-                    <div class="order-btn-two">
-                        <button>Order Now</button>
-                    </div>
-                </div><!--bottle-info-end--><!--this content visible only when the screen size less then(1700px) and above (992px);-->
-
-            </div><!--box5-end-->
-
-            <div class="box6">
-                <div class="recent-prescription">
-                    <h1>Most Recent Prescriptions</h1>
-                    <p><u>View All</u></p>
-                    <div class="table-responsive">
-                        <table>
-                            <tr>
-                                <th>
-                                    <div style="display: flex; gap:5px; justify-content:center;white-space: nowrap;">
-                                        <div> RX Number</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Order ID</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Patient</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Prescriber</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Status</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-                                <th>Tracking</th>
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Medication</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-
-                                <th>
-                                    <div style="display: flex; gap:5px;justify-content: center;white-space: nowrap;">
-                                        <div>Issue Date</div>
-                                        <div style="display: flex; flex-direction:column; margin-top: 3px;">
-                                            <div style="height: 0px; font-size:12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-up"></i></div>
-                                            <div style="height: 0; font-size: 12px;color: #00ACBA;"> <i
-                                                    class="fa-solid fa-sort-down"></i></div>
-                                        </div>
-                                    </div>
-                                </th>
-                            </tr>
-
-                            <tr>
-                                <td><u>RX-65964845</u></td>
-                                <td><u>ORD-87209514</u></td>
-                                <td><span>TW</span> Theresa Woodman</td>
-                                <td>Jennifer Acosta</td>
-                                <td>Pharmacy</td>
-                                <td><u>Track Now</u></td>
-                                <td>Brim-Dor&#174</td>
-                                <td>11/10/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td><u>RX-75859648</u></td>
-                                <td><u>ORD-95487425</u></td>
-                                <td><span>TW</span> Theresa Woodman</td>
-                                <td>Walter Smith</td>
-                                <td>Shipped</td>
-                                <td><u>Track Now</u></td>
-                                <td>Dex-Moxi-Ketor&#174</td>
-                                <td>11/10/2021</td>
-                            </tr>
-
-                            <tr>
-                                <td><u>RX-65964845</u></td>
-                                <td><u>ORD-87209514</u></td>
-                                <td><span>TW</span> Theresa Woodman</td>
-                                <td>Jennifer Acosta</td>
-                                <td>Pharmacy</td>
-                                <td><u>Track Now</u></td>
-                                <td>Brim-Dor&#174</td>
-                                <td>11/10/2021</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div><!--box-six-end-->
-
-        </div><!--column-division-end-->
-
-
-
-
-    </div><!--section-box-end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 
 </body>
 

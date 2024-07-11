@@ -1,0 +1,170 @@
+.popup-box {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+    .cancel-mark {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px;
+
+        .fa-xmark {
+            font-size: 25px;
+            color: rgb(99, 97, 97);
+        }
+    }
+
+    h1 {
+        font-family: "Titillium Web", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45.63px;
+        color: rgba(38, 50, 56, 1);
+        text-align: center;
+    }
+
+    .input-box {
+        border: 2px solid #ccc;
+        height: 45px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        padding: 0 10px;
+        width: 100%;
+
+        &.color-border {
+            border: 2px solid rgba(0, 172, 186, 1);
+
+            .caption-text {
+                p {
+                    color: rgba(0, 172, 186, 1);
+                }
+            }
+        }
+
+        &.comment {
+            padding: 0px 0px;
+        }
+
+        .caption-text {
+            position: absolute;
+            top: -10px;
+            left: 7px;
+
+            p {
+                font-family: "Titillium Web", sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #444;
+                background: rgba(255, 255, 255, 1);
+                padding: 0px 1px;
+                user-select: none;
+                margin-bottom: 0;
+
+                span {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 16px;
+                    color: rgba(0, 172, 186, 1);
+
+                }
+            }
+        }
+
+        textarea {
+            width: 100%;
+            border: none;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            display: flex;
+            flex: 1;
+            font-family: "Titillium Web", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0.01em;
+            color: rgba(38, 50, 56, 1);
+        
+        }
+
+        .fa-angle-down {
+            display: flex;
+            align-items: center;
+            color: rgba(0, 172, 186, 1);
+
+        }
+  
+
+    }
+
+
+    .footer-box {
+        display: flex;
+         padding: 2% 0;
+        .footer-text {
+            display: flex;
+            align-items: center;
+           
+            p {
+
+                font-family: "Titillium Web",
+                    sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 19.77px;
+                color: rgba(38, 50, 56, 1);
+
+                span {
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 19.77px;
+                    color: rgba(0, 172, 186, 1);
+                }
+            }
+        }
+
+        .footer-btn {
+            display: flex;
+            gap:4%;
+            justify-content: flex-end;
+            .cancel-btn {
+                width: 135px;
+                button {
+                    width:100%;
+                    height: 45px;
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 19px;
+                    font-weight: 600;
+                    line-height: 28.9px;
+                    text-align: center;
+                    color: rgba(3, 36, 57, 1);
+                    background: rgba(255, 255, 255, 1);
+                    border: 1px solid rgba(3, 36, 57, 1);
+                    border-radius: 5px;
+                }
+            }
+
+            .add-btn {
+                width: 180px;
+                button {
+                    width:100%;
+                    height: 45px;
+                    font-family: "Titillium Web", sans-serif;
+                    font-size: 19px;
+                    font-weight: 600;
+                    line-height: 28.9px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 1);
+                    background: rgba(0, 172, 186, 1);
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

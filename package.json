@@ -3,11 +3,10 @@
     "bootstrap": "^5.3.3"
   },
 
-  "scripts":{ 
+  "scripts": {
 
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "compile-files":"sass --watch ./assets/style/sass/main.scss ./styles/style.css"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-login": "sass --watch ./assets/style/sass/login.scss ./styles/login.css",
+    "compile-dashboard": "sass --watch ./assets/style/sass/dashboard.scss ./styles/dashboard.css"
   }
-  }
-  
-
+}

@@ -1,0 +1,20 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./dashboard/background.scss";
+@import "./dashboard/menu-bar.scss";
+@import "./dashboard/navbar.scss";
+@import "./dashboard/layout.scss";
+@import "./dashboard/box-one.scss";
+@import "./dashboard/box-two.scss";
+@import "./dashboard/box-three.scss";
+@import "./dashboard/box-four.scss";
+@import "./dashboard/box-five.scss";
+@import "./dashboard/box-six.scss";
+@import "./dashboard/popup-box.scss";
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
