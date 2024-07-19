@@ -6,6 +6,7 @@
   "scripts": {
 
     "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-order": "sass --watch ./assets/style/sass/order.scss ./styles/order.css",
     "compile-login": "sass --watch ./assets/style/sass/login.scss ./styles/login.css",
     "compile-dashboard": "sass --watch ./assets/style/sass/dashboard.scss ./styles/dashboard.css"
   }

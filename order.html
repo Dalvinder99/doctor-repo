@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="background">
+        <h1>Prescription Order</h1>
+
+        <div class="step-line"></div>
+        <div class="align-step">
+            <div class="round-step start">
+                <div class="steps fill"> </div>
+                <div class="steps-text">
+                    <p>Build<br>Order</p>
+                </div>
+            </div>
+
+            <div class="round-step">
+                <div class="steps center"> </div>
+                <div class="steps-text">
+                    <p>Review<br>Order</p>
+                </div>
+            </div>
+
+            <div class="round-step end">
+                <div class="steps"></div>
+                <div class="steps-text">
+                    <p>Send To<br>Pharmacy</p>
+                </div>
+            </div>
+        </div>
+    </div><!--background end-->
+
+    <div class="container">
+        <div class="section">
+            <div class="process-root">
+                <div class="process-box">
+                    <div class="billing">
+                        <div class="step-box">
+                            <div class="step-one">
+                                <p>STEP 1</p>
+                            </div>
+                        </div>
+                        <p>Bill To</p>
+                        <div class="checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!--row-one-end-->
+
+            <div class="select-option">
+                <input type="radio" name="select-option" id="box-one">
+                <input type="radio" name="select-option" id="box-two">
+
+                <div class="radio-box-one">
+                    <div class="select-box-border">
+                        <div class="select-point"></div>
+                    </div>
+                    <label for="box-one">Patient</label>
+                </div>
+
+                <div class="radio-box-two">
+                    <div class="select-box-border-two">
+                        <div class="select-point-two"></div>
+                    </div>
+                    <label for="box-two">Prescriber</label>
+                </div>
+            </div>
+            <div class="info">
+                <p><span>*</span>If patient card is not on file, ImprimisRx by phone for payment.</p>
+            </div>
+
+            <div class="process-root">
+                <div class="process-box">
+                    <div class="billing">
+                        <div class="step-box">
+                            <div class="step-one">
+                                <p>STEP 2</p>
+                            </div>
+                        </div>
+                        <p>Ship To</p>
+                        <div class="checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!--row-one-end-->
+
+            <div class="select-option-two">
+                <input type="radio" name="select-option-two" id="box-three">
+                <input type="radio" name="select-option-two" id="box-four">
+
+                <div class="radio-box-one">
+                    <div class="select-box-border">
+                        <div class="select-point"></div>
+                    </div>
+                    <label for="box-three">Patient</label>
+                </div>
+
+                <div class="radio-box-two">
+                    <div class="select-box-border-two">
+                        <div class="select-point-two"></div>
+                    </div>
+                    <label for="box-four">Prescriber</label>
+                </div>
+            </div>
+
+            <div class="process-root">
+                <div class="process-box">
+                    <div class="billing">
+                        <div class="step-box">
+                            <div class="step-one">
+                                <p>STEP 3</p>
+                            </div>
+                        </div>
+                        <p>Need By Date</p>
+                        <div class="checkbox">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!--row-one-end-->
+            <div class="date-box">
+                <label>Select Date Here:</label>
+                <div class="input-border">
+                    <input type="date" name="date" id="date" placeholder="Dec-15-2022" pattern="\d{3}-\d{2}-\d{4}"
+                        required>
+                </div>
+            </div>
+            <div class="arrow">
+                <div class="arrow-border"></div>
+
+                <div class="down-icon"><i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+
+        </div><!--section-end-->
+
+        <div class="second-section">
+            <div class="container-box">
+                <div class="regimen-box">
+                    <p>Prescription Regimen 1</p>
+                </div>
+                <div class="content-box">
+                    <div class="process-box-two">
+                        <div class="step-four-align">
+                            <div class="step-four-box">
+                                <p>STEP 4</p>
+                            </div>
+                        </div>
+                        
+                        <div class="add-box">
+                            <div class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add Patient</p>
+                            </div>
+
+                            <div class="round-box">
+                                <div class="border-outer">
+                                    <div class="border-inner">
+                                        <div class="border-fill"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                  <div class="side-border">  
+                <div class="info-outer">
+                    <div class="info-box">
+                      
+                        <div class="top-box">
+                            <div class="no-one">
+                                <p>1</p>
+                            </div>
+                            <div class="dr-personal-info">
+                                <i class="fa-regular fa-user"></i>
+                                <h2>Theresa Goodman <span>|</span> DOB:<span id="dob">05/04/1990</span></h2>
+                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="top-border"></div>
+                        <div class="bottom-box">
+                            <div class="dr-detail">
+                                <p>Phone Number<br><span>615-487-5785</span></p>
+                                <p>
+                                    Home Address<br>
+                                    <span> 350 Rockcastle Dr.,<br>
+                                        Murfreesboro, TN 37208</span>
+                                </p>
+                            </div>
+
+                            <div class="division-border"></div>
+
+                            <div class="info-detail">
+                                <p>payment Method<br>
+                                    <span>xxxx - Ending 8497</span>
+                                </p>
+                                <label>Comments</label>
+                                <div class="border-box">
+                                    <textarea></textarea>
+                                </div>
+
+                            </div>
+                        </div>
+                  
+                    </div>
+                </div>
+
+                <div class="info-outer-two">
+                    <div class="info-box-two">
+                        <div class="top-box">
+                            <div class="no-one">
+                                <p>1</p>
+                            </div>
+                            <div class="dr-personal-info">
+                                <i class="fa-regular fa-user"></i>
+                                <h2>Theresa Goodman <span>|</span> DOB:<span id="dob">05/04/1990</span></h2>
+                                <i class="fa-regular fa-trash-can"></i>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                  </div>
+                <div class="content-box">
+                    <div class="process-box-two">
+                   
+                        <div class="step-four-align">
+                            <div class="step-four-box">
+                                <p>STEP 5</p>
+                            </div>
+                        </div>
+
+                        <div class="add-box">
+                            <div class="plus">
+                                <i class="fa-solid fa-plus"></i>
+                                <p>Add Patient</p>
+                            </div>
+
+                            <div class="round-box">
+                                <div class="border-outer">
+                                    <div class="border-inner">
+                                        <div class="border-fill"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="delete-box">
+
+                    <div class="delete-border">
+                        <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="block-box">
+                <div class="add-plus">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="add-text">
+                    <p>Add New Block</p>
+                </div>
+            </div>
+        </div><!--second-section-->
+    </div><!--container-end-->
+</body>
+
+</html>
