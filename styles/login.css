@@ -1,0 +1,217 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.main-box {
+  background: linear-gradient(180deg, #02223A 37.5%, #032439 82.23%, #003146 100%);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-box .name-company {
+  display: flex;
+  justify-content: center;
+}
+.main-box .img-back-top {
+  width: 30%;
+  position: absolute;
+  top: 0;
+}
+.main-box .img-back-top img {
+  width: 100%;
+}
+.main-box .img-back-bottom {
+  width: 41%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main-box .img-back-bottom img {
+  width: 100%;
+}
+.main-box .dark-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.main-box .dark-box .dark-shadow {
+  width: 1118px;
+  height: 131px;
+  background: radial-gradient(50% 50% at 50% 50%, #0a0a0a 0%, rgba(7, 7, 7, 0.353) 52.6%, rgba(247, 246, 246, 0) 81.25%);
+  background-blend-mode: multiply;
+}
+.main-box .msg-image {
+  display: flex;
+  position: absolute;
+  bottom: 4%;
+  right: 1%;
+}
+.main-box .msg-image img {
+  width: 70%;
+  cursor: pointer;
+}
+
+.outer-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+  width: 100%;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 1% 5%;
+  width: calc(300px + 15%);
+}
+.form-box .inner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13% 0px;
+}
+.form-box .inner-box .heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 0.5%;
+}
+.form-box .inner-box .heading h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36.5px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+.form-box .inner-box .heading p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.86px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-box .inner-box .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 10%;
+  width: 100%;
+}
+.form-box .inner-box .input-box .email-box {
+  height: 51.69px;
+  border: 1px solid rgb(0, 172, 186);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+.form-box .inner-box .input-box .email-box input {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: none;
+  flex: 1;
+}
+.form-box .inner-box .input-box .password-box {
+  height: 51.69px;
+  border: 1px solid rgba(159, 166, 187, 0.75);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15px;
+}
+.form-box .inner-box .input-box .password-box input {
+  background: rgba(0, 0, 0, 0);
+  font-family: "Shippori Antique B1", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  line-height: 27.38px;
+  font-size: 10.5px;
+  outline: none;
+  border: none;
+  flex: 1;
+}
+.form-box .inner-box .input-box .password-box p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.82px;
+  color: rgb(255, 255, 255);
+}
+.form-box .inner-box .info-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 18%;
+  padding: 2% 0px;
+  width: 100%;
+}
+.form-box .inner-box .info-box .remember-box label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.82px;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+}
+.form-box .inner-box .info-box .forgot-box p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.82px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.form-box .inner-box .btn {
+  display: flex;
+  width: 100%;
+  gap: 3%;
+  padding-top: 1%;
+}
+.form-box .inner-box .btn button {
+  width: 100%;
+  height: 42.21px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25.86px;
+  color: rgb(255, 255, 255);
+  background: rgb(0, 172, 186);
+  border: 1px solid rgb(0, 172, 186);
+  border-radius: 6px;
+}
+.form-box .inner-box .btn button a {
+  text-decoration: none;
+  height: 42.21px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25.86px;
+  color: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=login.css.map */

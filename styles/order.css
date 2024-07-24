@@ -1,0 +1,907 @@
+:root {
+  --primary-color: rgba(82, 128, 151, 1);
+  --secondary-color:rgba(0, 172, 186, 1);
+}
+
+.order-background {
+  border: 5px;
+  padding: 0px 50px;
+}
+.order-background h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 76.05px;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-bottom: 5%;
+}
+.order-background .step-line {
+  border: 2px solid rgb(222, 222, 222);
+}
+.order-background .align-step {
+  display: flex;
+}
+.order-background .align-step .round-step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  transform: translateY(-30%);
+}
+.order-background .align-step .round-step.start {
+  align-items: flex-start;
+}
+.order-background .align-step .round-step.end {
+  align-items: flex-end;
+}
+.order-background .align-step .round-step .steps {
+  border: 8px solid var(--primary-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+}
+.order-background .align-step .round-step .steps.fill {
+  background-color: var(--primary-color);
+}
+.order-background .align-step .round-step .steps-text p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 33.05px;
+  color: var(--secondary-color);
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  background: rgba(217, 137, 45, 0.05);
+  margin: 0px 50px;
+  border-radius: 0px 40px 0px 40px;
+}
+.container .section {
+  padding: 70px 70px;
+}
+.container .section .process-root {
+  display: flex;
+  flex-direction: column;
+}
+.container .section .process-root .process-box {
+  display: flex;
+  flex-direction: column;
+}
+.container .section .process-root .process-box .billing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  height: 80px;
+  position: relative;
+}
+.container .section .process-root .process-box .billing .step-box {
+  border: 20px solid rgb(253, 249, 245);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  left: -2%;
+}
+.container .section .process-root .process-box .billing .step-box .step-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+}
+.container .section .process-root .process-box .billing .step-box .step-one p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45.63px;
+  color: rgb(253, 249, 245);
+}
+.container .section .process-root .process-box .billing p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60.84px;
+  color: rgb(253, 249, 245);
+  margin: 0;
+}
+.container .section .process-root .process-box .billing .checkbox {
+  border: 7px solid white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  right: 0.5%;
+}
+.container .section .process-root .process-box .billing .checkbox .fa-check {
+  color: rgb(253, 249, 245);
+  font-size: 50px;
+  padding: 5px;
+  font-weight: bolder;
+}
+.container .section .select-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  gap: 10%;
+  border-left: 3px solid var(--secondary-color);
+  border-left-style: dotted;
+  margin-left: 50px;
+}
+.container .section .select-option .radio-box-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .section .select-option .radio-box-one .select-box-border {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+}
+.container .section .select-option .radio-box-one .select-box-border .select-point {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.container .section .select-option .radio-box-one label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53.24px;
+  color: rgb(2, 34, 58);
+  user-select: none;
+}
+.container .section .select-option .radio-box-two {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .section .select-option .radio-box-two .select-box-border-two {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+}
+.container .section .select-option .radio-box-two .select-box-border-two .select-point-two {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.container .section .select-option .radio-box-two label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53.24px;
+  color: rgb(2, 34, 58);
+  user-select: none;
+}
+.container .section .select-option input {
+  display: none;
+}
+.container .section .select-option #box-one:checked ~ .radio-box-one .select-box-border .select-point {
+  display: block;
+}
+.container .section .select-option #box-two:checked ~ .radio-box-two .select-box-border-two .select-point-two {
+  display: block;
+}
+.container .section .info p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.3px;
+  text-align: center;
+  color: var(--primary-color);
+}
+.container .section .info p span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.3px;
+  color: var(--secondary-color);
+}
+.container .section .select-option-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+  gap: 10%;
+  border-left: 3px solid var(--secondary-color);
+  border-left-style: dotted;
+}
+.container .section .select-option-two .radio-box-one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .section .select-option-two .radio-box-one .select-box-border {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+}
+.container .section .select-option-two .radio-box-one .select-box-border .select-point {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.container .section .select-option-two .radio-box-one label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53.24px;
+  color: rgb(2, 34, 58);
+  user-select: none;
+}
+.container .section .select-option-two .radio-box-two {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container .section .select-option-two .radio-box-two .select-box-border-two {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--secondary-color);
+  border-radius: 50%;
+  position: relative;
+}
+.container .section .select-option-two .radio-box-two .select-box-border-two .select-point-two {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: none;
+}
+.container .section .select-option-two .radio-box-two label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53.24px;
+  color: rgb(2, 34, 58);
+  user-select: none;
+}
+.container .section .select-option-two input {
+  display: none;
+}
+.container .section .select-option-two #box-three:checked ~ .radio-box-one .select-box-border .select-point {
+  display: block;
+}
+.container .section .select-option-two #box-four:checked ~ .radio-box-two .select-box-border-two .select-point-two {
+  display: block;
+}
+.container .section .date-box {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 3%;
+}
+.container .section .date-box label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 53.24px;
+}
+.container .section .date-box .input-border {
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px 0px 10px 0px;
+}
+.container .section .date-box .input-border input {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 53.24px;
+  color: var(--primary-color);
+  text-align: center;
+  border: none;
+  outline: none;
+  background: rgb(253, 249, 245);
+}
+.container .section .arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+.container .section .arrow .arrow-border {
+  width: 60px;
+  border-top: 3px dotted var(--secondary-color);
+  transform: rotate(90deg);
+}
+.container .section .arrow .down-icon {
+  padding-top: 15px;
+}
+.container .section .arrow .down-icon .fa-chevron-down {
+  color: var(--secondary-color);
+}
+
+.second-section {
+  padding: 0px 90px;
+}
+.second-section .container-box {
+  background: rgba(65, 154, 160, 0.1);
+  border-radius: 0px 30px 0px 30px;
+}
+.second-section .container-box .regimen-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+.second-section .container-box .regimen-box p {
+  width: 430px;
+  height: 65px;
+  background-color: var(--secondary-color);
+  border-radius: 0px 20px 0px 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 51.71px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: absolute;
+}
+.second-section .container-box .content-box {
+  padding: 80px 150px;
+}
+.second-section .container-box .content-box .process-box-two {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.second-section .container-box .content-box .process-box-two .step-four-align {
+  display: flex;
+  flex: 1;
+  position: absolute;
+  left: -15%;
+  z-index: 1;
+}
+.second-section .container-box .content-box .process-box-two .step-four-align .step-four-box {
+  border: 20px solid rgb(234, 239, 237);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  width: 130px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section .container-box .content-box .process-box-two .step-four-align .step-four-box p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45.63px;
+  color: rgb(253, 249, 245);
+}
+.second-section .container-box .content-box .process-box-two .add-box {
+  background-color: var(--primary-color);
+  border-radius: 0px 40px 40px 0px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  position: relative;
+}
+.second-section .container-box .content-box .process-box-two .add-box .plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.second-section .container-box .content-box .process-box-two .add-box .plus .fa-plus {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  color: rgb(234, 239, 237);
+  font-size: 20px;
+  padding: 10px;
+}
+.second-section .container-box .content-box .process-box-two .add-box .plus p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60.84px;
+  color: rgb(234, 239, 237);
+  margin: 0;
+}
+.second-section .container-box .content-box .process-box-two .add-box .round-box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1%;
+  top: 4%;
+}
+.second-section .container-box .content-box .process-box-two .add-box .round-box .border-outer {
+  border: 7px solid rgb(234, 239, 237);
+  border-radius: 50%;
+}
+.second-section .container-box .content-box .process-box-two .add-box .round-box .border-outer .border-inner {
+  border: 9px solid var(--secondary-color);
+  border-radius: 50%;
+}
+.second-section .container-box .content-box .process-box-two .add-box .round-box .border-outer .border-inner .border-fill {
+  border: 20px solid rgb(234, 239, 237);
+  border-radius: 50%;
+}
+.second-section .container-box .side-border {
+  margin: 0px 120px;
+  border-left: 3px dotted var(--secondary-color);
+}
+.second-section .container-box .side-border .info-outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.second-section .container-box .side-border .info-outer .info-box {
+  background: rgb(82, 128, 151);
+  border-radius: 40px;
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 10px;
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .no-one {
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 37px;
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .no-one p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38.03px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 0;
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info .fa-user {
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.42px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info h2 span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.42px;
+  color: var(--secondary-color);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info h2 #dob {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.42px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info .fa-trash-can {
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-box .dr-personal-info .fa-chevron-down {
+  color: var(--secondary-color);
+}
+.second-section .container-box .side-border .info-outer .info-box .top-border {
+  border-top: 2px dotted rgb(255, 255, 255);
+  margin: 5px 30px;
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+  width: 100%;
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .dr-detail p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .dr-detail p span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .division-border {
+  border: 1px dotted var(--secondary-color);
+  margin: 35px 0px;
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .info-detail p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .info-detail p span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .info-detail label {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .info-detail .border-box {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+}
+.second-section .container-box .side-border .info-outer .info-box .bottom-box .info-detail .border-box textarea {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+.second-section .container-box .side-border .info-outer-two {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two {
+  display: flex;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 10px;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .no-one {
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 40px;
+  height: 37px;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .no-one p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38.03px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  margin: 0;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info .fa-user {
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.42px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info h2 span {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30.42px;
+  color: var(--secondary-color);
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info h2 #dob {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.42px;
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info .fa-trash-can {
+  color: rgb(255, 255, 255);
+}
+.second-section .container-box .side-border .info-outer-two .info-box-two .top-box .dr-personal-info .fa-chevron-down {
+  color: var(--secondary-color);
+}
+.second-section .container-box .delete-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}
+.second-section .container-box .delete-box .delete-border {
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-section .container-box .delete-box .delete-border .fa-trash-can {
+  color: var(--secondary-color);
+}
+.second-section .block-box {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding-top: 10px;
+}
+.second-section .block-box .add-plus {
+  display: flex;
+  align-items: center;
+}
+.second-section .block-box .add-plus .fa-plus {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 12px;
+}
+.second-section .block-box .add-text p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60.84px;
+  color: var(--secondary-color);
+}
+
+.navbar-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
+.navbar-row .bar-btn {
+  display: flex;
+  gap: 20%;
+}
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .navbar-row .bar-btn {
+    gap: 10%;
+  }
+}
+.navbar-row .bar-btn .fa-bars {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  cursor: pointer;
+}
+.navbar-row .bar-btn .img-bar {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .navbar-row .bar-btn .img-bar {
+    width: 70%;
+  }
+}
+.navbar-row .bar-btn .img-bar img {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (min-width: 1150px) {
+  .navbar-row .bar-btn {
+    display: none;
+  }
+}
+.navbar-row .logo {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1149px) {
+  .navbar-row .logo {
+    display: none;
+  }
+}
+.navbar-row .logo img {
+  width: 100%;
+}
+@media only screen and (min-width: 1150px) and (max-width: 1296px) {
+  .navbar-row .logo img {
+    width: 80%;
+    height: auto;
+  }
+}
+.navbar-row .list {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 360px) and (max-width: 1149px) {
+  .navbar-row .list {
+    display: none;
+  }
+}
+.navbar-row .list ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  list-style-type: none;
+}
+@media only screen and (min-width: 1150px) and (max-width: 1296px) {
+  .navbar-row .list ul {
+    gap: 15px;
+  }
+}
+.navbar-row .list ul li {
+  display: flex;
+}
+.navbar-row .list ul li a {
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+  user-select: none;
+  position: relative;
+}
+@media only screen and (min-width: 1150px) and (max-width: 1296px) {
+  .navbar-row .list ul li a {
+    font-size: 15px;
+  }
+}
+.navbar-row .list ul li a span {
+  font-weight: 700;
+}
+.navbar-row .list ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: rgb(0, 172, 186);
+  position: absolute;
+  left: calc(50% - 3.5px);
+  top: -7px;
+  display: none;
+}
+.navbar-row .list ul li a::after {
+  content: "";
+  width: 90%;
+  height: 2px;
+  background: rgb(0, 172, 186);
+  position: absolute;
+  right: 0;
+  bottom: -17%;
+  left: 5%;
+  display: none;
+}
+.navbar-row .list ul li a:hover {
+  color: rgb(0, 172, 186);
+}
+.navbar-row .list ul li a:hover::before {
+  display: block;
+}
+.navbar-row .list ul li a:hover::after {
+  display: block;
+}
+.navbar-row .doctor-name {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .navbar-row .doctor-name {
+    gap: 10px;
+  }
+}
+.navbar-row .doctor-name p {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27.38px;
+  color: rgb(255, 255, 255);
+}
+@media only screen and (min-width: 1150px) and (max-width: 1296px) {
+  .navbar-row .doctor-name p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1150px) {
+  .navbar-row .doctor-name p {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar-row .doctor-name p {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .navbar-row .doctor-name p {
+    font-size: 10px;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+}
+.navbar-row .doctor-name p span {
+  font-weight: 700;
+}
+.navbar-row .doctor-name .profile-border {
+  border: 3px solid rgb(0, 172, 186);
+  border-style: dotted;
+  border-radius: 50%;
+}
+.navbar-row .doctor-name .profile-border .profile {
+  background-image: url("/assets/images/Ellipse 1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 54px;
+  width: 54px;
+}
+@media only screen and (min-width: 1150px) and (max-width: 1296px) {
+  .navbar-row .doctor-name .profile-border .profile {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .navbar-row .doctor-name .profile-border .profile {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .navbar-row .doctor-name .profile-border .profile {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+.background {
+  background-image: url("/assets/images/Group 355.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=order.css.map */
